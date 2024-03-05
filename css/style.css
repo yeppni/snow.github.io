@@ -1,0 +1,100 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* text 속성을 통일시키기 위한 css */
+.m_text{
+  /*중간크기 text 속성*/
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.s_text{
+  /*작은크기 text 속성*/
+  font-size: 12px;
+}
+
+body{
+  background-color: #fafafa;
+}
+
+article{
+  width: 600px;
+  border: 1px solid #00000036;
+  border-radius: 10px;  /*테두리 둥글어지는 정도*/
+  margin: 30px auto;
+  background-color: #fff;
+}
+
+header{
+  display: flex;
+  padding: 10px 20px;
+}
+
+header .profillemg{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  /* margin: 0px 10px 0px 0px; */
+  margin-right: 10px;
+}
+
+/* 이미지크기 맞추기 */
+.img_section img{
+  width: 100%;
+ padding: 10px;
+}
+
+.icon{
+  padding-left: 10px;
+  position: relative;
+}
+
+.icon img{
+  width: 30px;
+}
+
+.icon :nth-child(4){
+  position: absolute;  /*나만 옮길거야*/
+  right: 10px;  /*오른쪽에서부터 10px 떨어진 지점으로 옮기기*/
+}
+
+.likes,.contents,.time{
+  padding: 3px 10px;
+}
+
+/*time과 comment 사이에 줄을 긋고 싶다
+time 바닥테두리 or comment 천장테두리*/
+
+.comment{
+  border-top: 1px solid #00000036;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comment>input{
+  width: 88%;
+  border: none;
+  outline: none;
+  padding: 15px 10px;
+  margin: 5px;
+}
+
+.comment>p{
+  font-weight: 800;
+  color: #039BE5;
+  padding: 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  opacity: 0.5; /*투명도만 설정하는 속성 1=100%*/
+}
+
+.comment>p:hover{
+  background-color: #039BE5;
+  color: #fff;
+  opacity: 1;
+}
